@@ -8,13 +8,4 @@ function displayCurrentDay() {
 }
 
 displayCurrentDay();
-//countapi
- fetch('https://api.countapi.xyz/update/omrahangdale.in/visits/?amount=1')
-      .then(res => res.json())
-      .then(data => {
-        document.getElementById('visitor-count').innerText = data.value;
-      })
-      .catch(err => {
-        console.error('Visitor counter error:', err);
-        document.getElementById('visitor-count').innerText = 'Error';
-      });
+ 
